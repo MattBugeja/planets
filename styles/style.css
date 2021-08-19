@@ -15,6 +15,7 @@ body {
 
 ul {
   list-style: none;
+  /* width:100% */
 
 }
 
@@ -146,4 +147,39 @@ width: 60%;
 position: absolute;
 right: 20%;
 bottom: -30%
+}
+
+
+.home-menu{
+margin: 0 auto;
+}
+
+
+.home-btn{
+  width: 100%;
+    height: 50px;
+    justify-content: space-evenly;
+;
+ 
+  margin-top: 15%;
+}
+
+
+
+.home__btn{
+
+  background-color: transparent;
+  color:white;
+  text-transform: uppercase;
+  border:0;
+  font-weight: bolder;
+  width:100%
+  
+
+
+}
+
+
+.wrapper{
+  display: none;
 }

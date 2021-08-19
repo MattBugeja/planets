@@ -10,19 +10,45 @@ request.onload = function () {
 
   const planetMenu = document.querySelectorAll(".js-planet-menu__btn");
 
+  let planetName = document.querySelector(".js-planet-name");
+  const text = document.querySelector(".js-text");
+  const planetImg = document.querySelector(".js-planet-img");
+  const planetSurfaceImg = document.querySelector(".js-planet__surface");
+  const sourceLink = document.querySelector(".js-source");
+  const homeMenu = document.querySelector(".home-menu");
+  const wrapper = document.querySelector(".wrapper");
+  let index;
+
+  const attributeQuantities = document.querySelectorAll(
+    ".attributes__quantity"
+  );
+
+  const menu_btn = document.querySelectorAll(".home__btn");
+
+  menu_btn.forEach((btn) =>
+    btn.addEventListener("click", () => {
+      homeMenu.style.display = "none";
+      wrapper.style.display = "block";
+      console;
+      planetName.textContent = btn.textContent;
+      index = planetInfo.findIndex(
+        (x) => x.name.toLowerCase() === `${planetName.textContent}`
+      );
+
+      planetImg.src = planetInfo[index].images.overview;
+
+      attributeQuantities[0].textContent = planetInfo[index].rotation;
+      attributeQuantities[1].textContent = planetInfo[index].revolution;
+      attributeQuantities[2].textContent = planetInfo[index].radius;
+      attributeQuantities[3].textContent = planetInfo[index].temperature;
+
+      sourceLink.setAttribute("href", planetInfo[index].overview.source);
+    })
+  );
+
   planetMenu.forEach((btn) =>
     btn.addEventListener("click", function () {
       const menuChoice = btn.textContent;
-
-      const planetName = document.querySelector(".js-planet-name").textContent;
-      const text = document.querySelector(".js-text");
-      const planetImg = document.querySelector(".js-planet-img");
-      const planetSurfaceImg = document.querySelector(".js-planet__surface");
-      const sourceLink = document.querySelector(".js-source");
-
-      let index = planetInfo.findIndex(
-        (x) => x.name.toLowerCase() === `${planetName}`
-      );
 
       console.log(index);
       console.log(planetName);
@@ -46,5 +72,3 @@ request.onload = function () {
     })
   );
 };
-
-// }))
