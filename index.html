@@ -27,24 +27,26 @@
         <li>neptune</li></ul>
     </nav> -->
 
-    <nav><ul class="planet-menu border-pale-white row "><li><button class = "planet-menu__btn color-white-half font-spartan txt-uppercase">overview</button></li>
-      <li><button class="planet-menu__btn color-white-half font-spartan txt-uppercase">structure</button></li>
-      <li><button class="planet-menu__btn color-white-half  font-spartan txt-uppercase">surface</button></li></ul></nav>
+    <nav><ul class="planet-menu border-pale-white row "><li><button class = "planet-menu__btn js-planet-menu__btn color-white-half font-spartan txt-uppercase">overview</button></li>
+      <li><button class="planet-menu__btn js-planet-menu__btn color-white-half font-spartan txt-uppercase">structure</button></li>
+      <li><button class="planet-menu__btn js-planet-menu__btn color-white-half  font-spartan txt-uppercase">surface</button></li></ul></nav>
   </header>
 
 <div class="planet-img-container">
-<img class="planet__img" src="assets/planet-mercury.svg"></img>
+<img class="planet__img js-planet-img" src="assets/planet-mercury.svg"></img>
+<img class="planet__surface js-planet__surface">
+
 </div>
 
 
 <div class="planet-desc">
-  <div class = "planet-desc__title font-antonio txt-uppercase">mercury</div>
-  <p class ="planet-desc__text font-spartan">
+  <div class = "planet-desc__title js-planet-name font-antonio txt-uppercase">mercury</div>
+  <p class ="planet-desc__text js-text font-spartan">
     Mercury is the smallest planet in the Solar System and the closest 
     to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
     shortest of all the Sun's planets. Mercury is one of four terrestrial 
     planets in the Solar System, and is a rocky body like Earth.</p>
-  <a  href="https://en.wikipedia.org/wiki/Mercury_(planet)" target=”_blank” class="color-white-half planet-desc__source font-spartan"> Source : <span class="wiki">Wikipedia</span> </a>
+  <a class="color-white-half planet-desc__source js-source font-spartan" href="https://en.wikipedia.org/wiki/Mercury_(planet)" target=”_blank” > Source : <span class="wiki">Wikipedia</span> </a>
   
 </div>
 
@@ -84,7 +86,7 @@
 </section>
 
 
- 
+ <script src ="data.json"></script>
 <script src="script.js"></script>
 </body>
 </html>

@@ -56,6 +56,7 @@ border: 1px solid rgba(255, 255, 255, 0.2);
   width: 35%;
   margin: 80px auto;
   text-align: center;
+  position: relative;
 }
 
 .planet__img {
@@ -138,4 +139,11 @@ a:active {
   background-color: transparent;
   border: 0;
   font-weight: bold;
+}
+
+.planet__surface{
+width: 60%;
+position: absolute;
+right: 20%;
+bottom: -30%
 }
