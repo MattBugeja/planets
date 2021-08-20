@@ -19,20 +19,18 @@ request.onload = function () {
   const sourceLink = document.querySelector(".js-source");
   const homeMenu = document.querySelector(".home-menu");
   const wrapper = document.querySelector(".wrapper");
-  let index;
+  let index = 0;
 
   const attributeQuantities = document.querySelectorAll(
     ".attributes__quantity"
   );
 
-  const menu_btn = document.querySelectorAll(".home__btn");
 
-  menu_btn.forEach((btn) =>
-    btn.addEventListener("click", () => {
-      homeMenu.style.display = "none";
-      wrapper.style.display = "block";
-      console;
-      planetName.textContent = btn.textContent;
+  const navBtn = document.querySelectorAll(".nav-item");
+
+  navBtn.forEach((btn)=>{btn.addEventListener("click",function(){
+
+    planetName.textContent = btn.textContent;
       index = planetInfo.findIndex(
         (x) => x.name.toLowerCase() === `${planetName.textContent}`
       );
@@ -45,20 +43,22 @@ request.onload = function () {
       attributeQuantities[3].textContent = planetInfo[index].temperature;
       text.textContent = planetInfo[index].overview.content;
 
-      sourceLink.setAttribute("href", planetInfo[index].overview.source);
-    })
-  );
+      sourceLink.setAttribute("href", planetInfo[index].overview.source)
+      planetSurfaceImg.style.visibility = "hidden";
+  
+  
+  
+  })})
+
+
 
   planetMenu.forEach((btn) =>
     btn.addEventListener("click", function () {
-      const menuChoice = btn.textContent;
-
-      console.log(index);
-      console.log(planetName);
-      text.textContent = planetInfo[index][menuChoice].content;
+      const menuChoice = this.dataset.type;
       planetSurfaceImg.src = planetInfo[index].images.surface;
-
-      sourceLink.setAttribute("href", planetInfo[index][menuChoice].source);
+  
+      text.textContent = planetInfo[index][menuChoice].content;
+           sourceLink.setAttribute("href", planetInfo[index][menuChoice].source);
 
       if (menuChoice === "surface") {
         planetSurfaceImg.style.visibility = "visible";
@@ -68,10 +68,20 @@ request.onload = function () {
         planetImg.src = planetInfo[index].images[menuChoice];
       }
 
-      // planetImg.src = planetInfo[index].images[menuChoice];
-      console.log(planetInfo);
-
-      console.log(menuChoice);
-    })
+         })
   );
 };
+
+
+// Hamburger Menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
+

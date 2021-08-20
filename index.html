@@ -16,36 +16,27 @@
 <body>
 
 
-  <nav class="column home-menu">
-
-    <ul class="home">
-
-    
-        <li class="home-btn row"><button class="home__btn font-antonio">mercury</button></li>
-        <li class="home-btn row"><button class="home__btn font-antonio">venus</button></li>
-        <li class="home-btn row"><button class="home__btn font-antonio">earth</button></li>
-        <li class="home-btn row"><button class="home__btn font-antonio">mars</button></li>
-        <li class="home-btn row"><button class="home__btn font-antonio">jupiter</button></li>
-        <li class="home-btn row"><button class="home__btn font-antonio">saturn</button></li>
-        <li class="home-btn row"><button class="home__btn font-antonio">uranus</button></li>
-        <li class="home-btn row"><button class="home__btn font-antonio">neptune</button></li>
-</ul>
-</nav>
-
-
-  <div class = "wrapper" >
-
   <header>
-    <nav><div class="logo font-antonio">the planets</div>
+    <nav class="navbar"><div class="navbar-logo font-antonio">the planets</div>
 
-      <!-- <ul class="txt-uppercase row"><li>mercury</li>
-          <li>venus</li>
-        <li>earth</li>
-        <li>mars</li>
-        <li>jupiter</li>
-        <li>saturn</li>
-        <li>uranus</li>
-        <li>neptune</li></ul> -->
+      <ul class="nav-menu font-spartan txt-uppercase row"><li class="nav-item">mercury</li>
+          <li class="nav-item">venus</li>
+        <li class="nav-item">earth</li>
+        <li class="nav-item">mars</li>
+        <li class="nav-item">jupiter</li>
+        <li class="nav-item">saturn</li>
+        <li class="nav-item">uranus</li>
+        <li class="nav-item">neptune</li></ul>
+
+        <div class ="hamburger">
+
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+
+
+        </div>
+
     </nav>
 
     
@@ -69,7 +60,7 @@
 
 
 <div class="planet-desc">
-  <div class = "planet-desc__title js-planet-name font-antonio txt-uppercase">Matthew</div>
+  <div class = "planet-desc__title js-planet-name font-antonio txt-uppercase">mercury</div>
   <div class="responsiveness-wrapper-md responsiveness-wrapper-lg">
     <div class="text-source-container">
   <p class ="planet-desc__text js-text font-spartan">
@@ -85,9 +76,9 @@
 
 <div class= "planetary-menu-lg">
 
-  <nav class=nav-planet-menu><ul class="planet-menu  column "><li class="menu-item border-pale-white"><button class = " color-white planet-menu__btn js-planet-menu__btn  font-spartan txt-uppercase"><span class="num color-white-half">01</span>  overview</button></li>
-    <li class="menu-item border-pale-white"><button class="color-white planet-menu__btn js-planet-menu__btn font-spartan txt-uppercase"><span class="color-white-half num ">02</span> internal structure</button></li>
-    <li class="menu-item border-pale-white"><button class="color-white planet-menu__btn  js-planet-menu__btn font-spartan txt-uppercase"><span class="color-white-half num">03</span> surface geology</button></li></ul></nav>
+  <nav class=nav-planet-menu><ul class="planet-menu  column "><li class="menu-item border-pale-white"><button class = " color-white planet-menu__btn js-planet-menu__btn  font-spartan txt-uppercase" data-type="overview"><span class="num color-white-half">01</span>  overview</button></li>
+    <li class="menu-item border-pale-white"><button class="color-white planet-menu__btn js-planet-menu__btn font-spartan txt-uppercase" data-type="structure"><span class="color-white-half num " >02</span> internal structure</button></li>
+    <li class="menu-item border-pale-white"><button class="color-white planet-menu__btn  js-planet-menu__btn font-spartan txt-uppercase" data-type="surface"><span class="color-white-half num" >03</span> surface geology</button></li></ul></nav>
   </div>
 </div>
 
