@@ -41,6 +41,7 @@ request.onload = function () {
       attributeQuantities[1].textContent = planetInfo[index].revolution;
       attributeQuantities[2].textContent = planetInfo[index].radius;
       attributeQuantities[3].textContent = planetInfo[index].temperature;
+      text.textContent = planetInfo[index].overview.content;
 
       sourceLink.setAttribute("href", planetInfo[index].overview.source);
     })

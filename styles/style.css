@@ -66,18 +66,19 @@ border: 1px solid rgba(255, 255, 255, 0.2);
 
 .planet-desc {
   text-align: center;
+  padding:0 24px;
 }
 
 .planet-desc__title {
   font-size: 40px;
-  text-align: center;
+  /* text-align: center; */
   margin: 10px 0;
 }
 
 .planet-desc__text {
   font-size: 11px;
   line-height: 2;
-  padding: 5px 24px;
+  padding: 5px 0;
   margin-bottom: 20px;
 }
 
@@ -182,4 +183,38 @@ margin: 0 auto;
 
 .wrapper{
   display: none;
+}
+
+@media(min-width: 768px){
+
+
+
+.grid{
+
+  display: grid;
+  grid-template-columns: 50% 50%; 
+grid-template-rows: 75% 25% ;
+}
+
+
+.planet-desc{
+
+
+  text-align: left;
+
+  grid-area: 1 1 2 2 ;
+
+}
+
+.nav-planet-menu{
+
+  grid-area: 2 2 3 3;
+
+
+
+}
+
+
+
+
 }
