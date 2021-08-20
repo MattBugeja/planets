@@ -1,12 +1,14 @@
+
+// -----JSON Request-------
 let requestURl = "data.json";
-
 let request = new XMLHttpRequest();
-
 request.open("GET", requestURl);
 request.responseType = "json";
 request.send();
 request.onload = function () {
   let planetInfo = request.response;
+
+  // ------End JSON request------
 
   const planetMenu = document.querySelectorAll(".js-planet-menu__btn");
 

@@ -10,13 +10,12 @@ body {
   width: 100vw;
   height: 100vh;
   color: white;
-  /* padding: 25px; */
+
 }
 
 ul {
   list-style: none;
   /* width:100% */
-
 }
 
 .row {
@@ -39,22 +38,25 @@ ul {
   font-family: "Antonio", sans-serif;
 }
 
-.txt-uppercase{
-
-    text-transform: uppercase;
+.txt-uppercase {
+  text-transform: uppercase;
 }
 
-.color-white-half{
-    
-    color: rgba(255, 255, 255, 0.5);
+.color-white-half {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.border-pale-white{
-border: 1px solid rgba(255, 255, 255, 0.2);
+.border-pale-white {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.color-white{
+  color: white;
 }
 
 .planet-img-container {
   width: 35%;
+  height:auto;
   margin: 80px auto;
   text-align: center;
   position: relative;
@@ -62,28 +64,32 @@ border: 1px solid rgba(255, 255, 255, 0.2);
 
 .planet__img {
   width: 100%;
+  height:auto;
 }
 
 .planet-desc {
   text-align: center;
-  padding:0 24px;
+  padding: 0 24px;
 }
 
 .planet-desc__title {
   font-size: 40px;
   /* text-align: center; */
-  margin: 10px 0;
+  margin-bottom: -10px 0;
 }
 
 .planet-desc__text {
   font-size: 11px;
   line-height: 2;
-  padding: 5px 0;
-  margin-bottom: 20px;
+  padding: 20px 0 0 0;
+  /* margin-bottom: 20px; */
+
 }
 
 .planet-desc__source {
+  display: inline-block;
   font-size: 12px;
+  padding-top: 20px;
 }
 
 a:hover,
@@ -101,10 +107,12 @@ a:active {
 
 .attributes {
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .attributes__row {
-  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 10px 20px;
   margin: 0 24px;
@@ -119,11 +127,11 @@ a:active {
   font-size: 20px;
   line-height: 29px;
   letter-spacing: -0.75px;
-  color:white;
+  color: white;
 }
 
 .planet-menu {
-  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  /* border: 1px solid hsla(0, 0%, 100%, 0.2); */
   width: 100%;
   padding: 20px;
 }
@@ -137,84 +145,163 @@ a:active {
   height: auto;
   font-size: 9px;
   line-height: 10px;
-  color: hsla(0, 0%, 100%, 0.5);
+  /* color: hsla(0, 0%, 100%, 0.5); */
   background-color: transparent;
   border: 0;
   font-weight: bold;
 }
 
-.planet__surface{
-width: 60%;
-position: absolute;
-right: 20%;
-bottom: -30%
+.planet__surface {
+  width: 60%;
+  position: absolute;
+  right: 20%;
+  bottom: -30%;
 }
 
-
-.home-menu{
-margin: 0 auto;
+.home-menu {
+  margin: 0 auto;
 }
 
-
-.home-btn{
+.home-btn {
   width: 100%;
-    height: 50px;
-    justify-content: space-evenly;
-;
- 
+  height: 50px;
+  justify-content: space-evenly;
   margin-top: 15%;
 }
 
-
-
-.home__btn{
-
+.home__btn {
   background-color: transparent;
-  color:white;
+  color: white;
   text-transform: uppercase;
-  border:0;
+  border: 0;
   font-weight: bolder;
-  width:100%
-  
-
-
+  width: 100%;
 }
 
+.wrapper {
+  display: none;
+ height:100vh
+}
 
-.wrapper{
+.planetary-menu-lg {
   display: none;
 }
 
-@media(min-width: 768px){
 
+@media (min-width: 768px) {
 
+  .planet-menu-sm{
+    display: none;
+  }
 
-.grid{
+  .responsiveness-wrapper-md{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+  }
 
-  display: grid;
-  grid-template-columns: 50% 50%; 
-grid-template-rows: 75% 25% ;
+  .planetary-menu-lg {
+    display: block;
+    width:50%
+  }
+
+  .attributes--col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .attributes--row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .attributes__row {
+    width: 100%;
+  }
+
+.planet-desc{
+  text-align: left;
 }
 
+.planet-desc__text{
+  width:100%;
+}
+.text-source-container{
+  width:50%;
+}
+
+ .planet-menu{
+
+ padding:0;
+ 
+
+ 
+ }
+
+ .menu-item{
+  padding: 10px;
+  width:80%;
+margin-left: 70px;
+ }
+
+ .num{
+   margin-right:10px;
+ }
+
+ .attributes{
+
+
+
+
+
+ }
+}
+
+@media(min-width:1400px){
+.responsiveness-wrapper-lg{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.menu-item{
+width:100%;
+margin:0;
+height:40px
+
+}
+
+.wrapper-lg{
+  display: flex;
+flex-direction: row;
+height:auto;
+
+
+}
 
 .planet-desc{
 
-
-  text-align: left;
-
-  grid-area: 1 1 2 2 ;
+  width:33%;
 
 }
 
-.nav-planet-menu{
-
-  grid-area: 2 2 3 3;
-
-
-
+.planet__img{
+  width:50%;
 }
 
+.text-source-container{
+  width:65%;
+}
 
+.planetary-menu-lg {
+  display: block;
+  width:65%
+}
 
+.attributes{
+  margin: 20px auto 0 auto;
+  width:80%
+}
 
 }
