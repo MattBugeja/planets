@@ -87,6 +87,7 @@ function mobileMenu() {
 <<<<<<< HEAD
 
 
+<<<<<<< HEAD
 ||||||| 81f72e5 (planet choice btn  color effects work)
 <<<<<<< HEAD
 =======
@@ -106,6 +107,10 @@ function mobileMenu() {
 >>>>>>> planetchoiceeffects
 =======
 >>>>>>> parent of 81f72e5 (planet choice btn  color effects work)
+||||||| a6dc3b2 (planet choice btn  color effects work)
+// small change
+=======
+>>>>>>> parent of a6dc3b2 (planet choice btn  color effects work)
 ||||||| a6dc3b2 (planet choice btn  color effects work)
 // small change
 =======
