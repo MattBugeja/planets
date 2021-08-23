@@ -84,8 +84,18 @@ function mobileMenu() {
   navMenu.classList.toggle("active");
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+||||||| 81f72e5 (planet choice btn  color effects work)
+<<<<<<< HEAD
+=======
+
+
+// small change
+>>>>>>> planetchoiceeffects
+=======
+>>>>>>> parent of 81f72e5 (planet choice btn  color effects work)
 ||||||| 81f72e5 (planet choice btn  color effects work)
 <<<<<<< HEAD
 =======
