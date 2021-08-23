@@ -1,3 +1,4 @@
+
 // -----JSON Request-------
 let requestURl = "data.json";
 let request = new XMLHttpRequest();
@@ -10,117 +11,67 @@ request.onload = function () {
   // ------End JSON request------
 
   const planetMenu = document.querySelectorAll(".js-planet-menu__btn");
+
   let planetName = document.querySelector(".js-planet-name");
   const text = document.querySelector(".js-text");
   const planetImg = document.querySelector(".js-planet-img");
   const planetSurfaceImg = document.querySelector(".js-planet__surface");
   const sourceLink = document.querySelector(".js-source");
+  const homeMenu = document.querySelector(".home-menu");
+  const wrapper = document.querySelector(".wrapper");
+  let index = 0;
+
   const attributeQuantities = document.querySelectorAll(
     ".attributes__quantity"
   );
 
+
   const navBtn = document.querySelectorAll(".nav-item");
-  const planetColors = {
-    mercury: "#419EBB",
-    venus: "#EDA249",
-    earth: "#6D2ED5",
-    mars: "#D14C32",
-    jupiter: "#D83A34",
-    saturn: "#CD5120",
-    uranus: "#1EC1A2",
-    neptune: "#2D68F0",
-  };
 
-  let menuChoice = null;
+  navBtn.forEach((btn)=>{btn.addEventListener("click",function(){
 
-  let index = 0; //loads Mercury as first planet;
-  const desktopScreen = window.matchMedia('(min-width:1300px)');
+    planetName.textContent = btn.textContent;
+      index = planetInfo.findIndex(
+        (x) => x.name.toLowerCase() === `${planetName.textContent}`
+      );
 
-  const mobileScreen = window.matchMedia('max-width: 365px');
-
-  function indexHandler(planetName) {
-    index = planetInfo.findIndex(
-      (x) => x.name.toLowerCase() === `${planetName.textContent}`
-    );
-    return index;
-  }
-
-  function attributesHandler(index) {
-    const attributesList = ["rotation", "revolution", "radius", "temperature"];
-
-    for (let i = 0; i < attributeQuantities.length; i++) {
-      attributeQuantities[i].textContent =
-        planetInfo[index][`${attributesList[i]}`];
-    }
-  }
-
-  function surfaceImgToggle(index, menuChoice) {
-    if (menuChoice === "surface") {
-      planetSurfaceImg.style.visibility = "visible";
       planetImg.src = planetInfo[index].images.overview;
-    } else {
+
+      attributeQuantities[0].textContent = planetInfo[index].rotation;
+      attributeQuantities[1].textContent = planetInfo[index].revolution;
+      attributeQuantities[2].textContent = planetInfo[index].radius;
+      attributeQuantities[3].textContent = planetInfo[index].temperature;
+      text.textContent = planetInfo[index].overview.content;
+
+      sourceLink.setAttribute("href", planetInfo[index].overview.source)
       planetSurfaceImg.style.visibility = "hidden";
-      planetImg.src = planetInfo[index].images[menuChoice];
-    }
-  }
+  
+  
+  
+  })})
 
-  function pageBuilder(index, menuChoice) {
-    if (menuChoice === null) {
-      menuChoice = "overview";
-    }
 
-    planetSurfaceImg.src = planetInfo[index].images.surface;
-
-    text.textContent = planetInfo[index][menuChoice].content;
-    sourceLink.setAttribute("href", planetInfo[index][menuChoice].source);
-
-    surfaceImgToggle(index, menuChoice);
-  }
-
-  navBtn.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      planetName.textContent = btn.textContent;
-      index = indexHandler(planetName);
-      attributesHandler(index);
-
-      menuChoice = null;
-
-      pageBuilder(index, menuChoice);
-
-      planetMenu.forEach((btn) => {
-        btn.style.backgroundColor = "transparent";
-      });
-
-      navBtn.forEach((btn) => {
-        btn.style.border = "none";
-      });
-      
-
-      if(desktopScreen.matches){
- 
-      btn.style.borderTop = ` thick solid ${
-        planetColors[planetName.textContent]
-      }`;
-
-    }
-
-      planetSurfaceImg.style.visibility = "hidden";
-    });
-  });
 
   planetMenu.forEach((btn) =>
     btn.addEventListener("click", function () {
-      menuChoice = this.dataset.type;
-      pageBuilder(index, menuChoice);
+      const menuChoice = this.dataset.type;
+      planetSurfaceImg.src = planetInfo[index].images.surface;
+  
+      text.textContent = planetInfo[index][menuChoice].content;
+           sourceLink.setAttribute("href", planetInfo[index][menuChoice].source);
 
-      planetMenu.forEach((btn) => {
-        btn.style.backgroundColor = "transparent";
-      });
+      if (menuChoice === "surface") {
+        planetSurfaceImg.style.visibility = "visible";
+        planetImg.src = planetInfo[index].images.overview;
+      } else {
+        planetSurfaceImg.style.visibility = "hidden";
+        planetImg.src = planetInfo[index].images[menuChoice];
+      }
 
-      btn.style.backgroundColor = `${planetColors[planetName.textContent]}`;
-    })
+         })
   );
 };
+
 
 // Hamburger Menu
 const hamburger = document.querySelector(".hamburger");
@@ -132,3 +83,5 @@ function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 }
+
+
