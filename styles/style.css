@@ -298,10 +298,10 @@ a:active {
     display: none;
   }
 
-  .nav-item:hover{
+  /* .nav-item:hover{
 background-color: white;
 
-  }
+  } */
 
   .responsiveness-wrapper-md {
     width: 100%;
@@ -406,145 +406,7 @@ background-color: white;
     right: 35%;
     bottom: -30%;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
-.nav-item{
-  padding: 4% 0%;
-}
-
-.nav-menu{
-  padding-bottom: 0%;
-  width:60%
-}
-
-
-.planet-img-container {
-  width: 50%;
-  margin: 60px auto;
-
-||||||| 7bd76d7 (plaent choice btn  color effects work)
-
-  .navbar{
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.navbar-logo {
-  text-align:left;
-  padding: 2% 2rem;
-  width:40%
-}
-
-
-.nav-item{
-  padding: 4% 0%;
-}
-
-.nav-menu{
-  padding-bottom: 0%;
-  width:60%
-}
-
-
-.planet-img-container {
-  width: 50%;
-  margin: 60px auto;
-
-=======
->>>>>>> parent of 7bd76d7 (plaent choice btn  color effects work)
-||||||| 7bd76d7 (plaent choice btn  color effects work)
-
-  .navbar{
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.navbar-logo {
-  text-align:left;
-  padding: 2% 2rem;
-  width:40%
-}
-
-
-.nav-item{
-  padding: 4% 0%;
-}
-
-.nav-menu{
-  padding-bottom: 0%;
-  width:60%
-}
-
-
-.planet-img-container {
-  width: 50%;
-  margin: 60px auto;
-
-=======
->>>>>>> parent of 7bd76d7 (plaent choice btn  color effects work)
-}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-||||||| 81f72e5 (planet choice btn  color effects work)
-
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 81f72e5 (planet choice btn  color effects work)
-.planet__surface {
-  width: 20%;
-  left: 40%;
-  bottom: -15%;
-||||||| 7bd76d7 (plaent choice btn  color effects work)
-
-  .navbar{
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.navbar-logo {
-  text-align:left;
-  padding: 2% 2rem;
-  width:40%
-}
-
-
-.nav-item{
-  padding: 4% 0%;
-}
-
-.nav-menu{
-  padding-bottom: 0%;
-  width:60%
-}
-
-
-.planet-img-container {
-  width: 50%;
-  margin: 60px auto;
-
-||||||| a6dc3b2 (planet choice btn  color effects work)
 
 
 /* small change */
-=======
->>>>>>> parent of a6dc3b2 (planet choice btn  color effects work)
-||||||| 7bd76d7 (plaent choice btn  color effects work)
-
-.planet__surface {
-  width: 20%;
-  left: 40%;
-  bottom: -15%;
-}
-
-=======
->>>>>>> parent of 7bd76d7 (plaent choice btn  color effects work)
