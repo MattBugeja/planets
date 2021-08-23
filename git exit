@@ -1,0 +1,80 @@
+[33mcommit 352364c7e0e1ea6f4528e04898d27cfeb0c23868[m[33m ([m[1;36mHEAD -> [m[1;32mplanetchoiceeffects[m[33m, [m[1;32mmain[m[33m)[m
+Merge: a6dc3b2 81f72e5
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Mon Aug 23 15:11:21 2021 +0200
+
+    Merge branch 'main' into planetchoiceeffects
+
+[33mcommit 81f72e5dbeb2cb59deecdbd1472ca5ae9a79bdcc[m
+Merge: d77adff a6dc3b2
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Mon Aug 23 15:07:41 2021 +0200
+
+    planet choice btn  color effects work
+
+[33mcommit a6dc3b2c2382bb6bba8bffc50565fea0d78fd7c2[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Mon Aug 23 15:04:08 2021 +0200
+
+    planet choice btn  color effects work
+
+[33mcommit d77adff4514b24225049a296e803bee7869449eb[m
+Merge: 7bd76d7 dd80285
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Mon Aug 23 14:55:52 2021 +0200
+
+    Merge branch 'planetchoiceeffects'
+
+[33mcommit dd80285a7b3ae48a57c0122ed048a27a53c952fd[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Mon Aug 23 14:55:34 2021 +0200
+
+    plaent choice btn  color effects work
+
+[33mcommit 7bd76d74d540d4bca2d2fb291b80c1f83d6c2340[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Mon Aug 23 14:52:26 2021 +0200
+
+    plaent choice btn  color effects work
+
+[33mcommit 90e32155b49a06a4d822d391081249889035e96f[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Fri Aug 20 16:20:59 2021 +0200
+
+    menu buttons switched to datasets, hamburger menu done, responsiveness functioning
+
+[33mcommit 5c4d92bbbf057398fa96d6178c5afd332a364ede[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Fri Aug 20 13:10:55 2021 +0200
+
+    responsiveness working
+
+[33mcommit 1390eff93e7b74f8bc2fd8a4a93c513e5b5eeb09[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Fri Aug 20 08:31:52 2021 +0200
+
+    starting on tablet responsiveness
+
+[33mcommit 1a0557b2222c4eadede89e6248b4c17dc9f72e0b[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Thu Aug 19 17:43:02 2021 +0200
+
+    Js finished. All planets are connected. Added temperory menu
+
+[33mcommit a0cb66115cb8f3d78158ebf8124a750803104f78[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Thu Aug 19 15:49:36 2021 +0200
+
+    JS image and text changes for planet-menu finished
+
+[33mcommit 223bbb14d8634ba8f190e9f5d47d3a6313ddcc0e[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Thu Aug 19 13:03:32 2021 +0200
+
+    first draft css finished
+
+[33mcommit a2b94a77df5142e6c936e92e67570854f723a13f[m
+Author: MattBugeja <matthewabugeja@gmail.com>
+Date:   Thu Aug 19 10:09:18 2021 +0200
+
+    initial html

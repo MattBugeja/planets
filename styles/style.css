@@ -407,3 +407,30 @@ background-color: white;
     bottom: -30%;
   }
 }
+<<<<<<< HEAD
+=======
+
+
+.nav-item{
+  padding: 4% 0%;
+}
+
+.nav-menu{
+  padding-bottom: 0%;
+  width:60%
+}
+
+
+.planet-img-container {
+  width: 50%;
+  margin: 60px auto;
+
+}
+
+.planet__surface {
+  width: 20%;
+  left: 40%;
+  bottom: -15%;
+}
+
+>>>>>>> parent of 81f72e5 (planet choice btn  color effects work)
