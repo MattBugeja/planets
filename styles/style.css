@@ -58,37 +58,14 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
   width:100%
-}
-
-@media(min-width:765px){
-
-  .navbar{
-
-    flex-direction: column;
-    width:100vw;
-    justify-content: space-evenly;
-    row-gap: 25px;
-    
-  }
-
 }
 
 .navbar-logo {
   width: 40%;
   font-size: 28px;
   text-transform: uppercase;
-  text-align: center;
-}
-
-@media (min-width: 765px) {
-  .navbar-logo {
-    width: 25%;
-    font-size: 28px;
-    text-transform: uppercase;
-    padding-top: 25px;
-  }
+  padding: 4% 0;
 }
 
 .hamburger {
@@ -104,17 +81,26 @@ ul {
   transition: all 0.3s ease-in-out;
   background-color: white;
   margin-right: 25px;
+
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   width:100%;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .nav-item{
+  padding: 6% 0;
   cursor:pointer;
+  align-content: center;
+}
+
+.nav-item-underline{
+
+border-top: 1px;
+
 }
 
 
@@ -134,11 +120,6 @@ ul {
 
   .nav-menu.active {
     left: 0;
-  }
-
-  .nav-item {
-    margin: 2.5rem 0;
-   
   }
 
   .hamburger {
@@ -211,8 +192,7 @@ a:active {
 }
 
 .attributes {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
 .attributes__row {
@@ -240,10 +220,7 @@ a:active {
   padding: 20px;
 }
 
-.logo {
-  font-size: 28px;
-  text-transform: uppercase;
-}
+
 
 .planet-menu__btn {
   height: auto;
@@ -256,6 +233,7 @@ a:active {
   text-align: left;
   cursor: pointer;
 }
+
 
 .planet__surface {
   width: 60%;
@@ -293,14 +271,10 @@ a:active {
   display: none;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 765px) {
   .planet-menu-sm {
     display: none;
-  }
-
-  .nav-item:hover{
-background-color: white;
-
   }
 
   .responsiveness-wrapper-md {
@@ -355,7 +329,40 @@ background-color: white;
   .planet-menu__btn {
     padding: 16px;
   }
-}
+
+
+    .navbar-logo {
+        width: 25%;
+        font-size: 28px;
+        text-transform: uppercase;
+        padding-bottom: 0;
+        text-align: center;
+      }
+
+      .nav-menu{
+        padding-bottom: 4%;
+      }
+    
+    
+    .nav-item{
+      padding: 0;
+      border: 0;
+    }
+
+    .navbar{
+
+      flex-direction: column;
+      width:100vw;
+      justify-content: space-evenly;
+      row-gap: 25px;
+      
+    }
+  
+
+  }  
+ 
+
+
 
 @media (min-width: 1300px) {
   .responsiveness-wrapper-lg {
@@ -406,4 +413,38 @@ background-color: white;
     right: 35%;
     bottom: -30%;
   }
+
+  .navbar{
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
+.navbar-logo {
+  text-align:left;
+  padding: 2% 2rem;
+  width:40%
+}
+
+
+.nav-item{
+  padding: 4% 0%;
+}
+
+.nav-menu{
+  padding-bottom: 0%;
+  width:60%
+}
+
+
+.planet-img-container {
+  width: 50%;
+  margin: 60px auto;
+
+}
+
+.planet__surface {
+  width: 20%;
+  left: 40%;
+  bottom: -15%;
+}
+
