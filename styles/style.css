@@ -59,20 +59,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  width:100%
-}
-
-@media(min-width:765px){
-
-  .navbar{
-
-    flex-direction: column;
-    width:100vw;
-    justify-content: space-evenly;
-    row-gap: 25px;
-    
-  }
-
+  width: 100%;
 }
 
 .navbar-logo {
@@ -80,15 +67,6 @@ ul {
   font-size: 28px;
   text-transform: uppercase;
   text-align: center;
-}
-
-@media (min-width: 765px) {
-  .navbar-logo {
-    width: 25%;
-    font-size: 28px;
-    text-transform: uppercase;
-    padding-top: 25px;
-  }
 }
 
 .hamburger {
@@ -109,14 +87,13 @@ ul {
 .nav-menu {
   display: flex;
   align-items: center;
-  width:100%;
+  width: 100%;
   padding: 0 20px;
 }
 
-.nav-item{
-  cursor:pointer;
+.nav-item {
+  cursor: pointer;
 }
-
 
 @media only screen and (max-width: 765px) {
   .nav-menu {
@@ -124,7 +101,7 @@ ul {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: black;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -138,7 +115,6 @@ ul {
 
   .nav-item {
     margin: 2.5rem 0;
-   
   }
 
   .hamburger {
@@ -160,12 +136,10 @@ ul {
 
 /* End NavBar */
 
-
-
 .planet-img-container {
   width: 35%;
-  height: auto;
-  margin: 80px auto;
+  /* height: 30vh; */
+  margin: 100px auto;
   text-align: center;
   position: relative;
 }
@@ -258,10 +232,10 @@ a:active {
 }
 
 .planet__surface {
-  width: 60%;
+  width: 50%;
   position: absolute;
-  right: 20%;
-  bottom: -30%;
+  right: 25%;
+  bottom: 0%;
 }
 
 .home-menu {
@@ -293,9 +267,23 @@ a:active {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 765px) {
   .planet-menu-sm {
     display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-evenly;
+    row-gap: 25px;
+  }
+
+  .navbar-logo {
+    width: 25%;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-top: 25px;
   }
 
   /* .nav-item:hover{
@@ -365,6 +353,30 @@ background-color: white;
     row-gap: 25px;
   }
 
+  .navbar {
+    padding:0;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    /* row-gap: 25px; */
+  }
+
+  .navbar-logo {
+    width: 25%;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-top: 2%;
+  }
+
+  .nav-item{
+    padding-top: 4%;
+  }
+
+
+  .planet-img-container {
+     /* height: 30vh; */
+   }
+
   .menu-item {
     width: 100%;
     margin: 0;
@@ -383,7 +395,7 @@ background-color: white;
   }
 
   .planet__img {
-    width: 50%;
+    width: 70%;
   }
 
   .text-source-container {
@@ -402,11 +414,10 @@ background-color: white;
 
   .planet__surface {
     width: 30%;
-    position: absolute;
+    /* position: absolute; */
     right: 35%;
-    bottom: -30%;
+    /* bottom: -0%; */
   }
 }
-
 
 /* small change */

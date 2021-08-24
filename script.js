@@ -34,9 +34,9 @@ request.onload = function () {
   let menuChoice = null;
 
   let index = 0; //loads Mercury as first planet;
-  const desktopScreen = window.matchMedia('(min-width:1300px)');
+  const desktopScreen = window.matchMedia("(min-width:1300px)");
 
-  // const mobileScreen = window.matchMedia('max-width: 365px');
+  const mobileScreen = window.matchMedia("(max-width:500px)");
 
   function indexHandler(planetName) {
     index = planetInfo.findIndex(
@@ -94,15 +94,12 @@ request.onload = function () {
       navBtn.forEach((btn) => {
         btn.style.border = "none";
       });
-      
 
-      if(desktopScreen.matches){
- 
-      btn.style.borderTop = ` thick solid ${
-        planetColors[planetName.textContent]
-      }`;
-
-    }
+      if (desktopScreen.matches) {
+        btn.style.borderTop = ` thick solid ${
+          planetColors[planetName.textContent]
+        }`;
+      }
 
       planetSurfaceImg.style.visibility = "hidden";
     });
@@ -117,7 +114,20 @@ request.onload = function () {
         btn.style.backgroundColor = "transparent";
       });
 
-      btn.style.backgroundColor = `${planetColors[planetName.textContent]}`;
+
+      if (mobileScreen.matches) {
+
+        planetMenu.forEach((btn) => {
+          btn.style.border = 0;
+        });
+
+        btn.style.borderBottom = ` thick solid ${
+          planetColors[planetName.textContent]
+        }`
+     
+      } else {
+        btn.style.backgroundColor = `${planetColors[planetName.textContent]}`;
+      }
     })
   );
 };
