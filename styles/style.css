@@ -77,7 +77,6 @@ a:active {
 .navbar-logo {
   width: 40%;
   font-size: 28px;
-  /* text-transform: uppercase; */
   text-align: center;
 }
 
@@ -117,7 +116,6 @@ a:active {
     width: 100%;
     height: 100vh;
     border-radius: 10px;
-    /* text-align: center; */
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 20;
@@ -126,7 +124,6 @@ a:active {
   .nav-menu.active {
     left: 0;
     column-gap: 0;
-    /* height: 100vh; */
     overflow-y: auto;
   }
 
@@ -138,7 +135,6 @@ a:active {
 
   .nav-item {
     margin: 2.5rem 0;
-    /* justify-content: left; */
     height: 15px;
   }
 
@@ -227,13 +223,14 @@ a:active {
 
 .nav-planet__menu {
   width: 100%;
-  padding: 20px;
+  padding: 40px;
 }
 
-/* .logo {
-  font-size: 28px;
-  text-transform: uppercase;
-} */
+.planet-menu{
+  justify-content: space-around;
+}
+
+
 
 .planet-menu__btn {
   height: auto;
@@ -254,36 +251,14 @@ a:active {
   bottom: 0%;
 }
 
-/* .home-menu {
-  margin: 0 auto;
-}
-
-.home-btn {
-  width: 100%;
-  height: 50px;
-  justify-content: space-evenly;
-  margin-top: 15%;
-} */
-
-/* .home__btn {
-  background-color: transparent;
-  color: white;
-  text-transform: uppercase;
-  border: 0;
-  font-weight: bolder;
-  width: 100%;
-} */
-
-/* .wrapper {
-  display: none;
-  height: 100vh;
-} */
 
 .planetary-menu-lg {
   display: none;
 }
 
 @media (min-width: 765px) {
+ 
+
   .planet-menu-sm {
     display: none;
   }
@@ -298,7 +273,6 @@ a:active {
   .navbar-logo {
     width: 25%;
     font-size: 28px;
-    /* text-transform: uppercase; */
     padding-top: 25px;
   }
 
@@ -358,6 +332,10 @@ a:active {
 }
 
 @media (min-width: 1300px) {
+  .app-container{
+    max-width: 1400px;
+    margin: 0 auto
+  }
   .responsiveness-wrapper-lg {
     width: 100%;
     display: flex;
@@ -368,15 +346,21 @@ a:active {
   .navbar {
     padding: 0;
     flex-direction: row;
-    width: 100vw;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-evenly;
   }
 
   .navbar-logo {
-    width: 25%;
+    width: max-content;
     font-size: 28px;
-    /* text-transform: uppercase; */
     padding-top: 2%;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    padding: 0 20px;
   }
 
   .nav-item {
